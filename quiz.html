@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cartoon Character Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+
+  <body>
+    <section id="quiz" class="cartoon-quiz">
+      <h2>Which Cartoon Character Are You?</h2>
+      <p>
+        Take our quiz and find out which classic cartoon character fits your
+        personality!
+      </p>
+      <form id="quiz-form">
+        <!-- Question 1 -->
+        <div class="quiz-question">
+          <h3>1. What's your favorite activity?</h3>
+          <label
+            ><input type="radio" name="q1" value="adventure" /> Going on
+            adventures</label
+          >
+          <label
+            ><input type="radio" name="q1" value="science" /> Doing science
+            experiments</label
+          >
+          <label
+            ><input type="radio" name="q1" value="eating" /> Eating
+            snacks</label
+          >
+          <label
+            ><input type="radio" name="q1" value="fighting" /> Saving the
+            world</label
+          >
+        </div>
+
+        <!-- Question 2 -->
+        <div class="quiz-question">
+          <h3>2. What's your favorite snack?</h3>
+          <label><input type="radio" name="q2" value="pizza" /> Pizza</label>
+          <label><input type="radio" name="q2" value="sweets" /> Candy</label>
+          <label><input type="radio" name="q2" value="fruit" /> Fruits</label>
+          <label
+            ><input type="radio" name="q2" value="burgers" /> Burgers</label
+          >
+        </div>
+
+        <!-- Question 3 -->
+        <div class="quiz-question">
+          <h3>3. Which quality describes you best?</h3>
+          <label><input type="radio" name="q3" value="brave" /> Brave</label>
+          <label><input type="radio" name="q3" value="smart" /> Smart</label>
+          <label><input type="radio" name="q3" value="funny" /> Funny</label>
+          <label
+            ><input type="radio" name="q3" value="leader" /> A natural
+            leader</label
+          >
+        </div>
+
+        <div class="button-container">
+          <button type="button" class="btn-primary" onclick="calculateResult()">
+            Submit Quiz
+          </button>
+          <button type="button" class="btn-secondary" onclick="goBack()">
+            Go Back
+          </button>
+        </div>
+      </form>
+
+      <div id="quiz-result" class="quiz-result">
+        <h3>Your Cartoon Character Is...</h3>
+        <p id="result-text"></p>
+      </div>
+    </section>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
