@@ -12,7 +12,7 @@
 body {
   font-family: "Bebas Neue", sans-serif;
   color: #333;
-  background-color: #f4f4f4;
+  background: linear-gradient(to right, #c9ccde, #938f97);
   line-height: 1.6;
 }
 
@@ -64,7 +64,7 @@ label {
 }
 
 label:hover {
-  background-color: #dfe6e9;
+  background: linear-gradient(to right, #c9ccde, #938f97);
 }
 
 input[type="radio"] {
@@ -75,15 +75,14 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centers the buttons horizontally */
-  gap: 1rem; /* Space between buttons */
+  align-items: center;
+  gap: 1rem;
   margin-top: 2rem;
-  /* Add some top margin for spacing */
 }
 
 /* Quiz Button */
 .btn-primary {
-  background-color: #00b894;
+  background-color: #e17055;
   color: #fff;
   font-size: 1.6rem;
   padding: 1rem 3rem;
@@ -96,7 +95,7 @@ input[type="radio"] {
 }
 
 .btn-primary:hover {
-  background-color: #009e80;
+  background-color: #c76248;
 }
 /* Go Back Button */
 .btn-secondary {
@@ -155,5 +154,20 @@ input[type="radio"] {
 
   #result-text {
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .cartoon-quiz {
+    padding: 1.5rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  label {
+    font-size: 1.2rem;
   }
 }

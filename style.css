@@ -104,7 +104,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 4rem;
-  background: linear-gradient(to right, #5f62ff, #ba71ff);
+  background: linear-gradient(to right, #c9ccde, #938f97);
   color: #fff;
   text-align: left;
   height: 100vh;
@@ -165,7 +165,7 @@ section {
 }
 
 .cartoon-item {
-  background-color: #ddd;
+  background: linear-gradient(to right, #c9ccde, #938f97);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -192,10 +192,10 @@ section {
 
 .cartoon-item p {
   font-size: 1.5rem;
-  color: #555;
+  color: #444;
 }
 .cartoon-item p a {
-  color: #ff5f6d;
+  color: #f11023;
   transition: color 0.3s;
 }
 .cartoon-item p a:hover {
@@ -205,7 +205,7 @@ section {
 /* Decades Section */
 .cartoon-decades {
   padding: 4rem 2rem;
-  background-color: #ddd;
+  background: linear-gradient(to right, #c9ccde, #938f97);
   text-align: center;
 }
 
@@ -286,7 +286,7 @@ section {
 /* Blog Section */
 .nostalgia-blog {
   padding: 4rem 2rem;
-  background-color: #ddd;
+  background: linear-gradient(to right, #c9ccde, #938f97);
   text-align: center;
 }
 
