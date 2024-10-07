@@ -304,7 +304,7 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 70%;
+  width: 70%;
   transition: transform 0.3s ease;
 }
 
@@ -358,7 +358,15 @@ section {
 }
 
 /* Responsive styles for smaller devices */
+@media (max-width: 1000px) {
+  .cartoon-item {
+    width: 90%;
+  }
+}
 @media (max-width: 768px) {
+  .cartoon-item {
+    width: 100%;
+  }
   .more-content {
     display: none;
   }
