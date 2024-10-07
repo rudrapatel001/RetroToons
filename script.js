@@ -20,3 +20,22 @@ buttons.forEach((button) => {
     }
   });
 });
+
+document.getElementById("menuButton").addEventListener("click", function () {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("active"); // Toggles the active class
+});
+
+document.querySelectorAll(".read-more-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const moreContent =
+      button.previousElementSibling.querySelector(".more-content");
+    if (moreContent.style.display === "inline") {
+      moreContent.style.display = "none";
+      button.textContent = "Read More";
+    } else {
+      moreContent.style.display = "inline";
+      button.textContent = "Read Less";
+    }
+  });
+});
